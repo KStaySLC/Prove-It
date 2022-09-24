@@ -19,6 +19,10 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
+  availableVotes: {
+    type: Number,
+    required: true,
+  },
   
   posts: [
     {

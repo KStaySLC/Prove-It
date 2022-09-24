@@ -1,3 +1,4 @@
+
 const { Schema, model } = require('mongoose');
 
 const postSchema = new Schema({
@@ -8,7 +9,7 @@ const postSchema = new Schema({
         maxlength: 500,
         trim: true,
     },
-    thoughtAuthor: {
+    postAuthor: {
         type: String,
         required: true,
         trim: true,
@@ -18,6 +19,36 @@ const postSchema = new Schema({
         default: Date.now,
         get: (timestamp) => dateFormat(timestamp),
     },
+    upVotes: {
+        type: Number,
+        required: true
+    },
+    downVotes: {
+        type: Number,
+        required: true
+    },
+    votedUsers: [{
+        type: String,
+    }],
+    comments: [
+        {
+          commentText: {
+            type: String,
+            required: true,
+            minlength: 1,
+            maxlength: 280,
+          },
+          commentAuthor: {
+            type: String,
+            required: true,
+          },
+          createdAt: {
+            type: Date,
+            default: Date.now,
+            get: (timestamp) => dateFormat(timestamp),
+          },
+        },
+      ],
 })
 
 
