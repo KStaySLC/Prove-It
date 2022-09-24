@@ -36,3 +36,5 @@ export const QUERY_SINGLE_POST = gql`
     }
   }
 `;
+
+// need to add comment and vote queries
