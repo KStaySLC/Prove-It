@@ -25,6 +25,41 @@ const resolvers = {
             const token = signToken(user);
             return { token, user };
         },
+        login: async (parent, { email, password }) => {
+            const user = await User.findOne({ email });
+      
+            if (!user) {
+              throw new AuthenticationError('No user found with this email address');
+            }
+      
+            const correctPw = await user.isCorrectPassword(password);
+      
+            if (!correctPw) {
+              throw new AuthenticationError('Incorrect credentials');
+            }
+      
+            const token = signToken(user);
+      
+            return { token, user };
+        },
+        addPost: async (parent, { postText, postAuthor }) => {
+            const post = await Post.create({ postText, postAuthor });
+      
+            await User.findOneAndUpdate(
+              { username: postAuthor },
+              { $addToSet: { posts: post._id } }
+            );
+      
+            return post;
+        },
+        
+        // Need vote mutations here
+
+        // Need comment mutations, require vote
+
+        removePost: async (parent, { postId }) => {
+            return Post.findOneAndDelete({ _id: postId })
+        },
     }
 }
 
