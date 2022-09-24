@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "secure-petal-357801",
+  "private_key_id": "e93d2e0ca0b2181d7c580a0194543966e7568f16",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCk40hkDUgreln7\nsml7x61niyUYg758orzQq8rqWT2FBvrxcQfWQ8iJ8xh02R912GZfuqoHTWB99vnx\nkBSK/RK9M4cn83cnKX6ltyKFS6Roegw4xAgu+FqGgbj4os9Fz4rcNxGncTZa6kc6\nmMFeFT8smdVkGNldlCSQqZvdQuo2W2VqlNKzPnlIZFVVxTrw1ssI0xSADUftkzx9\nWmvOJ0PFKTG/GjyA09args58g0v8mJG5UskgvEHwJrEpqMJ+omI1aN0YQ0xlSLal\nUBWkPEuYPWLsOoBBUlKCQsGksGRXZ8IbaYDaEXWJooxGYOCmuZHgSnrlY6weI2jh\nCb5R7iy5AgMBAAECggEAE4eI+jK5hs7HzCA6TqscjnxEUUY/YE89GmESmFWoC/LC\n86hd04K1RKOKlMJnr8NJAtMe0t0XDexb98DHMhwd5VNuUWzMgtKvGa0adVu7dhVo\nj6umRXvsaux/7lEISD439fO+z0yBMdz4QUg49O4CzMNOqzunOSZz+z9fguIrT/Ms\nIWaLe9pVM38t4/fEjUJ3LSHG8KXe0U7QpBldPqJY5SBf4WjEG4MJiWGZeNPjZi4B\nfZpw3wcjSFlCHvIGAXE90dyCMMPj61gJlf6vxs5mYeB1KfPcraRuj9FKjNJ6Z1uY\n3cpV9IqrfSnswtaoDsMvqH05x3ztO3qNTX8EmTtdgQKBgQDNezFiS3E1mwH+3vdm\nauhNWShFhjtggHN9P29z+Ev/2u8Hl2TEA4Dd8vTmz+tskj+4GqxLWM4k7ciMceHM\nalo7ACLvqPveUxsLRzCfCLuPJoqN4CvfW6uiV+TovBmhcXPB7pzGILROkKlk1r6b\nB9XVUTUQrJ17mrIriKQesVfzeQKBgQDNbS1WyIWni/Z0iX+gGbC0bhRb6SFHspef\njQEHWkKsa+3dauBWBj6c7GUDs5K6hEOr1Nr/HROG+6vjB/8gxevRD4Q94XQcqPtA\n23aQKLWwDyjCcwMSqXE4ewp0AqaI7LKRp3Aa1yhEgOU8jRiZjsmJVcKAlWAmZERJ\nY8O4kYpzQQKBgCtf19rR5gHUyKUOV9bstkCtk0ypuxrxwm8r1tD6FsDZbB+EG6cs\nviUbxgp61U1DyeOI7dmx00IEV5Md7vYBdS6DJtzEJPaXQFwvGNpZM45SKmksatZp\nOV+5gf6GxjpIApFrVviTqrvy2W8JzY5YJxEyZSsx5MRUsUtzOoGoGdKxAoGAM/Hz\nkQpLob5mp7lNKHLWmAlt5H/jBnpGlPXW2MEeMvNnxqGL8LTLiGrOcE0sQTXI1t6Q\nMgpsManaISKYhPUHWGoQCoXEEqs4PYJBTNq+drKen+ztTf7CvoF+dy9kZSNVVDd+\nxYq6h/f//3u+SLYuiCfDczhSg+K+0cAEcdt7owECgYEAoNotshLJMwCoeYiZubVw\ndh1zsqRcMZx8FmcHNLkrJ4CBbBMY85Ag3bAryUxBgMB5YbwvRmNlsFPSOXFFAfco\nFPHHkgblcVgVF+4/6y/p8klRHMQYqquBsZK+T6fTgR17j7uU13DMI4iQ4eqeLJHQ\n5cRO7yqiUjHorVLAtSLRQrQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "school-project-stuff@secure-petal-357801.iam.gserviceaccount.com",
+  "client_id": "110454974481899968916",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/school-project-stuff%40secure-petal-357801.iam.gserviceaccount.com"
+}
