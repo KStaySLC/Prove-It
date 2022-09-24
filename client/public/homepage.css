@@ -1,0 +1,58 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: auto;
+}
+
+h2 {
+    border: 3px;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.mapFeedContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.gmap_canvas {
+    width: 100%;
+}
+
+.feed {
+    display: flex;
+    justify-content: center;
+    width: 70vw;
+}
+
+img {
+    height: 500px;
+    width: 70vw;
+    border: 1px;
+    border-color: black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.votes{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.upVote {
+    border-bottom-left-radius: 5px;
+}
+
+.downVote {
+    border-bottom-right-radius: 5px;
+}

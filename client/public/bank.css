@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: auto;
+}
+h2 {
+    border: 3px;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.bankContainer {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.balance {
+    size: 100px;
+}
