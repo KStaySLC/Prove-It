@@ -2,10 +2,16 @@ const express = require("express");
 const app = express();
 const port = 8080;
 const path = require("path");
+const {format} = require('util');
 const { Storage } = require("@google-cloud/storage");
+const storage = new Storage({ keyFilename: "google-cloud-key.json"});
 const Multer = require("multer");
 const src = path.join(__dirname, "views");
+const processFile = require('../middleware/upload');
 app.use(express.static(src));
+const util = require('util');
+
+
 
 // using multer prevents downloading onto the express server
 const multer = Multer({
@@ -21,7 +27,53 @@ const storage = new Storage({
   projectId,
   keyFilename,
 });
-const bucket = storage.bucket("resume-builder-uofu"); // Get this from Google Cloud -> Storage
+const bucket = storage.bucket("resume-builder-uofu"); 
+const upload = async (req, res) => {
+  try {
+    await processFile(req, res);
+    if (!req.file) {
+      return res.status(400).send({ message: "Please upload a photo"});
+    }
+
+    const blob = bucket.file(req.file.originalName);
+    const blobStream = blob.createWriteStream ({
+      resumable: false,
+    });
+    blobStream.on("error", (err) => {
+      res.status(500).send({ message: err.message});
+    });
+    blobStream.on("finish", async (data) => {
+      const publicUrl = format(
+        `https://storage.googleapis.com/${resume-builder-uofu}/${blob.name}`
+      );
+      try {
+        await bucket.file(req.file.originalName).makePublic();
+      } catch {
+        return res.status(500).send({
+          message: `File Uploaded Successfully: ${req.file.originalName}, but public access is denied.`,
+          url: publicUrl,
+        });
+      }
+      res.status(200).send({
+        message: "Photo has been uploaded successfully: " + req.file.originalName,
+        url: publicUrl, 
+      });
+    });
+    blobStream.end(req.file.buffer);
+  } catch (err) {
+    res.status(500).send({
+      message: `Could not upload photo: ${req.file.originalName}. ${err}`,
+    });
+  }
+};
+
+module.exports = {
+  upload, 
+  getListFiles,
+  download,
+};
+
+// Get this from Google Cloud -> Storage
 
 // // // // Gets all files in the defined bucket
 // app.get("/upload", async (req, res) => {
