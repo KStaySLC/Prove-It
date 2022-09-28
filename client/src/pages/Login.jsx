@@ -1,6 +1,6 @@
 import React from 'react'
 
-function login() {
+function Login() {
   return (
     <div>
         <header>
@@ -38,4 +38,4 @@ function login() {
   )
 }
 
-export default login
+export default Login
