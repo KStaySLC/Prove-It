@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Addpost from './pages/Addpost';
 import Bank from './pages/Bank';
 import Home from './pages/Home';
-import Login from './components/login';
+import Login from './components/login.jsx';
 import Profile from './pages/Profile'
 import Header from './components/header';
 import Footer from './components/Footer';
@@ -68,10 +68,10 @@ function App() {
                 path="/profile"
                 element={<Profile />}
               />
-              <Route 
+              {/* <Route 
                 path="/posts/:postId" 
                 element={<Feed />} 
-              />
+              /> */}
             </Routes>
           </div>
           <Footer />
