@@ -2,7 +2,7 @@ import React from 'react'
 const styles = {width: '60%' };
 const styles2 = { color: 'black' };
 
-function login() {
+function Login() {
   return (
     <div>
         <header>
@@ -41,4 +41,4 @@ function login() {
   )
 }
 
-export default login
+export default Login
