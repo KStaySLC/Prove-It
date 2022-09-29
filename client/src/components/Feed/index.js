@@ -1,9 +1,9 @@
 import React from 'react'
 
-function index() {
+function Feed() {
   return (
-    <div>index</div>
+    <div>Feed</div>
   )
 }
 
-export default index
+export default Feed
