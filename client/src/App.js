@@ -67,6 +67,18 @@ function App() {
                     path='/login'
                     element={<Login />}
                   />
+                  <Route
+                    path='/bank'
+                    element={<Bank />}
+                  />
+                  <Route
+                    path='/profile'
+                    element={<Profile />}
+                  />
+                  <Route
+                    path='/Post'
+                    element={<Addpost />}
+                  />
                 </Routes>
             </div>
           <Footer />
