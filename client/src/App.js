@@ -16,7 +16,7 @@ import Bank from './pages/Bank';
 import Home from './pages/Home';
 import Login from './pages/Login.jsx';
 import Profile from './pages/Profile'
-import Header from './components/Header/header.jsx';
+import Header from './components/Header';
 import Footer from './components/Footer';
 console.log('here2')
 // Construct our main GraphQL API endpoint
@@ -66,6 +66,18 @@ function App() {
                   <Route
                     path='/login'
                     element={<Login />}
+                  />
+                  <Route
+                    path='/bank'
+                    element={<Bank />}
+                  />
+                  <Route
+                    path='/profile'
+                    element={<Profile />}
+                  />
+                  <Route
+                    path='/Post'
+                    element={<Addpost />}
                   />
                 </Routes>
             </div>
