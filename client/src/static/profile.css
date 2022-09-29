@@ -5,8 +5,72 @@ header {
     height: 10vh;
     width: auto;
 }
+
 h2 {
     border: 3px;
     border-color: black;
     border-radius: 10px;
 }
+
+.profileContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+img {
+    max-width: 25%;
+    height: 50vh;
+    border-radius: 50%;
+}
+
+.postNumber {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.amount {
+    font-size: 40px;
+}
+
+.posts{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.addPost {
+    margin-right: 10px;
+}
+
+.seePosts {
+    margin-left: 10px;
+}
+
+.postHistory {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.postHistoryHeader {
+    text-align: center;
+    width: 51%;
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.addPost:hover {
+    background-color: rgb(74, 239, 74);
+}
+
+.seePosts:hover {
+    background-color: rgb(154, 245, 245);
+}
+
