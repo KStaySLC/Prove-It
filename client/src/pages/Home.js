@@ -2,11 +2,13 @@ import React from 'react';
 // import { useQuery } from '@apollo/client';
 
 // import Feed from '../components/Feed';
-// import PostForm from '../components/PostForm';
+import PostForm from '../components/PostForm';
 
 // import { QUERY_POSTS } from '../utils/queries';
 
 const Home = () => {
+    console.log("here")
+  
 //   const { loading, data } = useQuery(QUERY_POSTS);
 //   const posts = data?.posts || [];
 
@@ -21,7 +23,7 @@ const Home = () => {
         </div>
         <div className="col-12 col-md-8 mb-3">
           {/* {loading ? ( */}
-            <div>Loading...</div>
+            <div>I've Made it this far!</div>
         {/* //   ) : (
         //     <Feed
         //       posts={posts}
