@@ -16,8 +16,9 @@ import Bank from './pages/Bank';
 import Home from './pages/Home';
 import Login from './pages/Login.jsx';
 import Profile from './pages/Profile'
-import Header from './components/Header';
-import Footer from './components/Footer';
+// import Header from './components/Header';
+// import Footer from './components/Footer';
+import Layout from './views/layout';
 console.log('here2')
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -54,34 +55,37 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div className="flex-column justify-flex-start min-100-vh">
-          <Header />
+          {/* <Header /> */}
             <div className="container">
               {/* {loading ? <p>Loading...</p> : <p>{data}</p>} */}
-              <p>earthtojava</p>
                 <Routes>
                   <Route 
                     path="/" 
-                    element={<Home />} 
+                    element={<Layout><Home /></Layout>} 
+                  />
+                  <Route
+                    path='/home'
+                    element={<Layout><Home /></Layout>}
                   />
                   <Route
                     path='/login'
-                    element={<Login />}
+                    element={<Layout><Login /></Layout>}
                   />
                   <Route
-                    path='/bank'
-                    element={<Bank />}
+                    path='/Bank'
+                    element={<Layout><Bank /></Layout>}
                   />
                   <Route
                     path='/profile'
-                    element={<Profile />}
+                    element={<Layout><Profile /></Layout>}
                   />
                   <Route
                     path='/Post'
-                    element={<Addpost />}
+                    element={<Layout><Addpost /></Layout>}
                   />
                 </Routes>
             </div>
-          <Footer />
+          {/* <Footer /> */}
         </div> 
       </Router>
     </ApolloProvider>
