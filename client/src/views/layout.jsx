@@ -1,5 +1,6 @@
 import React from "react";
-import Header from "../components/header";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 import '../static/layout.css'
 
 const Layout = (props) => {
@@ -7,6 +8,7 @@ const Layout = (props) => {
         <>
             <Header />
             <div className="children">{props.children}</div>
+            <Footer />
         </>
     )
 }
