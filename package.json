@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/KStaySLC/Prove-It#readme",
   "dependencies": {
+    "bootstrap": "^5.2.1",
     "graphql": "^16.6.0",
     "react-app-rewired": "^2.2.1"
   }
