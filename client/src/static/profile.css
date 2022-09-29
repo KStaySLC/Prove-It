@@ -1,4 +1,4 @@
-header {
+/* header {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -10,7 +10,7 @@ h2 {
     border: 3px;
     border-color: black;
     border-radius: 10px;
-}
+} */
 
 .profileContainer {
     display: flex;
@@ -20,11 +20,11 @@ h2 {
     height: 200px;
 }
 
-img {
+/* img {
     max-width: 25%;
     height: 50vh;
     border-radius: 50%;
-}
+} */
 
 .postNumber {
     font-size: 50px;

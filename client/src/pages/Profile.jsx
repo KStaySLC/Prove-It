@@ -1,13 +1,13 @@
 import React from "react";
 import "../static/profile.css";
-import imgKA from "../images/imgKA.jfif";
+// import imgKA from "../images/imgKA";
 const width = { width: "15%" };
 
 function Profile() {
   return (
     <div>
       <div class="profileContainer">
-        <img src={imgKA} alt="Hey Everybody!" /> 
+        {/* <img src={imgKA} alt="Hey Everybody!" />  */}
         <p class="postNumber">Total Posts</p>
         <p class="amount">55</p>
       </div>
