@@ -20,7 +20,7 @@ ul {
 .headerLi {
     list-style: none;
     margin: 50px;
-    color: blue
+    color: black
 }
 
 .headerLi:hover {
@@ -32,6 +32,6 @@ ul {
     color: blue
 }
 
-/* .headerLi:active {
+.headerLi:active {
     color: green
-} */
+}

@@ -1,0 +1,28 @@
+.mainDiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.formInput {
+    height: 40px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.formBtn {
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 25px;
+}
+
+.formBtn:hover {
+    background-color: rgb(120, 237, 120);
+    cursor: pointer;
+}
