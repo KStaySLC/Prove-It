@@ -20,7 +20,6 @@ const Home = () => {
       <div className="flex-row justify-center">
         <div
           className="col-12 col-md-10 mb-3 p-3"
-          style={{ border: '1px dotted #1a1a1a' }}
         >
            <div class="mapFeedContainer">
         <div class="map">
@@ -61,13 +60,13 @@ const Home = () => {
             </div>
         </div>
         <div class="feed">
-        <div class="post">
-            <img src="cod quiz img.jpg" alt="Just a pic for now" />
-            <div class="votes">
-                <button class="upVote" type="button" style={btnStyle}>True!</button>
-                <button class="downVote" type="button" style={btnStyle}>Bullshit!</button>
-            </div>
-        </div>
+          <div class="post">
+              <img src="cod quiz img.jpg" alt="Just a pic for now" />
+              <div class="votes">
+                  <button class="upVote" type="button" style={btnStyle}>True!</button>
+                  <button class="downVote" type="button" style={btnStyle}>Bullshit!</button>
+              </div>
+          </div>
         </div>
     </div>
           {/* <PostForm /> */}

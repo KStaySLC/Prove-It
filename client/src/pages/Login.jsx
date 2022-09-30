@@ -11,9 +11,9 @@ function Login() {
                 <form>
                     <div className="log-text">login</div>
                     <div className="sign-text">Username:</div>
-                    <input type="text" className="username" style= {styles}></input>
+                    <input type="text" className="username" style= {{width: '60%', color: 'red'}}></input>
                     <div className="sign-text">Password:</div>
-                    <input type="text" className="password" style = {[styles, styles2]}></input>
+                    <input type="text" className="password" style = {{width: '60%', color: 'red'}}></input>
                     <br></br>
                     <br></br>
                     <button className="sign-text" type="button" style={styles}>Sign In</button>
@@ -23,14 +23,14 @@ function Login() {
                 <form>
                     <div className="log-text">Sign up</div>
                     <div className="sign-text">Username:</div>
-                    <input type="text" className="username" style = {styles}></input>
+                    <input type="text" className="username" style = {{width: '60%', color: 'red'}}></input>
                     <div className="sign-text">Password:</div>
-                    <input type="text" className="password" style = {styles}></input>
+                    <input type="text" className="password" style = {{width: '60%', color: 'red'}}></input>
                     <div className="sign-text">Confirm Password:</div>
-                    <input type="text" className="password" style = {styles}></input>
+                    <input type="text" className="password" style = {{width: '60%', color: 'red'}}></input>
                     <br></br>
                     <br></br>
-                    <button className="sign-text" type="button" style= {styles}>Sign Up</button>
+                    <button className="sign-text" type="button" style= {{width: '60%', color: 'red'}}>Sign Up</button>
                 </form>
             </div>
         </div>
