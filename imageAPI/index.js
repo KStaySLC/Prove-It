@@ -68,20 +68,20 @@ const upload = async (req, res) => {
   }
 };
 
-const upload = async (req, res) => {
-  try {
-    await processFile(req, res);
-  } catch (err) {
-    if (err.code == "LIMIT_FILE_SIZE"){
-      return res.STATUS(500).send({
-        message: "File size cannot be larger than 5mb", 
-      });
-    }
-    res.status(500),send({
-      message: `Could not upload the file: ${req.file.originalName}. ${err}`,
-    });
-  }
-};
+// const upload = async (req, res) => {
+//   try {
+//     await processFile(req, res);
+//   } catch (err) {
+//     if (err.code == "LIMIT_FILE_SIZE"){
+//       return res.STATUS(500).send({
+//         message: "File size cannot be larger than 5mb", 
+//       });
+//     }
+//     res.status(500),send({
+//       message: `Could not upload the file: ${req.file.originalName}. ${err}`,
+//     });
+//   }
+// };
 
 const getListFiles = async (req, res) => {
   try {
@@ -116,13 +116,6 @@ const download = async (req, res) => {
   }
 };
 
-module.exports = {
-  upload, 
-  getListFiles,
-  download,
-};
-
-
 // // Get the main index html file
 app.get("/", (req, res) => {
   res.sendFile(src + "./index.html");
@@ -132,7 +125,11 @@ app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });
 
-
+module.exports = {
+  upload, 
+  getListFiles,
+  download,
+};
 
 
 
