@@ -14,8 +14,8 @@ import { LOGIN_USER, ADD_USER, ADD_POST } from './utils/mutations';
 import Addpost from './pages/Addpost';
 import Bank from './pages/Bank';
 import Home from './pages/Home';
-import Login from './pages/Login.jsx';
-import Profile from './pages/Profile'
+import Login from './pages/Login';
+import Profile from './pages/Profile';
 // import Header from './components/Header';
 // import Footer from './components/Footer';
 import Layout from './views/layout';
