@@ -2,9 +2,13 @@ const express = require("express");
 const app = express();
 const port = 8080;
 const path = require("path");
+
 const {format} = require('util');
+
 const { Storage } = require("@google-cloud/storage");
 const storage = new Storage({ keyFilename: "google-cloud-key.json"});
+const bucket = storage.bucket("resume-builder-uofu");
+
 const Multer = require("multer");
 const src = path.join(__dirname, "views");
 const processFile = require('../middleware/upload');
@@ -63,6 +67,54 @@ const upload = async (req, res) => {
   } catch (err) {
     res.status(500).send({
       message: `Could not upload photo: ${req.file.originalName}. ${err}`,
+    });
+  }
+};
+
+const upload = async (req, res) => {
+  try {
+    await processFile(req, res);
+  } catch (err) {
+    if (err.code == "LIMIT_FILE_SIZE"){
+      return res.STATUS(500).send({
+        message: "File size cannot be larger than 5mb", 
+      });
+    }
+    res.status(500),send({
+      message: `Could not upload the file: ${req.file.originalName}. ${err}`,
+    });
+  }
+};
+
+const getListFiles = async (req, res) => {
+  try {
+    const [files] = await bucket.getFiles();
+    let fileInfo = [];
+
+    files.forEach((file) => {
+      fileInfo.push({
+        name: file.name,
+        url: file.metadata.mediaLink,
+      });
+    });
+    res.status(200).send(fileInfo);
+  } catch (err) {
+    console.log(err);
+
+    res.status(500).send({
+      message: "Unable to read file list", 
+    });
+  }
+};
+
+const download = async (req, res) => {
+  try {
+    const [metaData] = await bucket.file(req.params.name).getMetaData();
+    res.redirect(metaData.mediaLink);
+
+  } catch (err) {
+    res.status(500).send({
+      message: "could not download the image" + err,
     });
   }
 };
