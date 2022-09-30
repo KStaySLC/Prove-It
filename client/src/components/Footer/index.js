@@ -1,15 +1,15 @@
 import React from 'react';
+import '../../static/footer.css'
 import { useLocation, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
   const location = useLocation();
   const navigate = useNavigate();
   return (
-    <footer className="w-100 mt-auto bg-secondary p-4">
-      <div className="container text-center mb-5">
+      <div className="footer">
         {location.pathname !== '/' && (
           <button
-            className="btn btn-dark mb-3"
+            className="backBtn"
             onClick={() => navigate(-1)}
           >
             &larr; Go Back
@@ -28,7 +28,6 @@ const Footer = () => {
           by the Tech Thoughts team.
         </h4>
       </div>
-    </footer>
   );
 };
 

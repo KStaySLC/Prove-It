@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-//import '../static/addPost.css'
+import '../static/post.css'
 
 function Addpost() {
   const [values, setValues] = useState({
@@ -42,51 +42,56 @@ function Addpost() {
   }
 
   return (
-    <div className="form-container">
-      <form className="upload-form" onSubmit={handleSubmit}>
+    <div className="mainDiv">
+      <form className="mainForm" onSubmit={handleSubmit}>
         {submitted && valid ?<div className="success-message">You Did It! Woo!</div> : null}
+        <p>Upload Phote here</p>
         <input
           disabled={submitted}
           onChange={handlePhotoUploadInputChange}
           value={values.photoUpload}
-          className="form-field"
+          className="formInput"
           placeholder="Upload Your Photo Here"
           name="photoUpload" />
           {submitted && !values.photoUpload ? <span>Please Upload a Photo</span> : null}
+          <p>Wtf were you doing?</p>
         <input
           disabled={submitted}
           onChange={handleWhatActivityInputChange}
           value={values.whatActivity} 
-          className="form-field"
+          className="formInput"
           placeholder="What Were You Doing?"
           name="whatActivity" />
           {submitted && !values.photoUpload ? <span>Please Tell Us What You Were Doing</span> : null}
+          <p>Where were you at?</p>
         <input
           disabled={submitted}
           onChange={handleWhereUInputChange}
           value={values.whereU} 
-          className="form-field"
+          className="formInput"
           placeholder="Where Were You?"
           name="whereU" />
           {submitted && !values.photoUpload ? <span>Please Tell Us Where You Were</span> : null}
+          <p>Tell us your name pls :D </p>
         <input
           disabled={submitted}
           onChange={handleWhoPostedInputChange}
           value={values.whoPosted} 
-          className="form-field"
+          className="formInput"
           placeholder="Your Name Here"
           name="whoPosted" />
           {submitted && !values.photoUpload ? <span>Please Tell Us Your Name</span> : null}
+          <p>How long can we call you out?</p>
         <input
           disabled={submitted}
           onChange={handleHowLongInputChange}
           value={values.howLong} 
-          className="form-field"
+          className="formInput"
           placeholder="How Long to Call Bullshit?"
           name="howLong" />
           {submitted && !values.photoUpload ? <span>Please Tell Us How Long We Have To Call Bullshit On This</span> : null}
           <button 
-            className="form-field"
+            className="formBtn"
             type="submit">Post!</button>
       </form>
     </div>

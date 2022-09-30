@@ -12,41 +12,45 @@ h2 {
     border-radius: 10px;
 } */
 
-.profileContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-}
-
 /* img {
     max-width: 25%;
     height: 50vh;
     border-radius: 50%;
 } */
 
+.profileContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
 .postNumber {
     font-size: 50px;
     font-weight: bold;
+    padding: 10px;
 }
 
 .amount {
-    font-size: 40px;
+    font-size: 50px;
+    font-style: oblique;
 }
 
 .posts{
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .addPost {
     margin-right: 10px;
+    border-radius: 10px;
 }
 
 .seePosts {
     margin-left: 10px;
+    border-radius: 10px;
 }
 
 .postHistory {
@@ -64,6 +68,7 @@ h2 {
     border-style: solid;
     border-radius: 15px;
     padding: 5px;
+    margin-top: 25px;
 }
 
 .addPost:hover {
