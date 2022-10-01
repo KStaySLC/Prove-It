@@ -56,8 +56,10 @@ img {
 .upVote:hover {
     background-color: green;
     cursor: pointer;
+    color: white;
 }
 .downVote:hover {
     background-color: red;
     cursor: pointer;
+    color: white;
 }
