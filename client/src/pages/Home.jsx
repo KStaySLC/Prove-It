@@ -1,20 +1,23 @@
 import React from "react";
-// import Feed from '../components/Feed';
-//import PostForm from "../components/PostForm";
+import { useQuery } from "@apollo/client";
+
+import PostList from '../components/PostList';
+
+import { QUERY_POSTS } from '../utils/queries';
+
+
+
 import "../static/home.css";
-//import { Link } from 'react-router-dom';
 const btnStyle = { width: "60%" };
-// import { useQuery } from '@apollo/client';
 
+// import PostForm from "../components/PostForm";
+// import { Link } from 'react-router-dom';
 
-
-// import { QUERY_POSTS } from '../utils/queries';
 
 const Home = () => {
   console.log("here");
-
-  //   const { loading, data } = useQuery(QUERY_POSTS);
-  //   const posts = data?.posts || [];
+  const { loading, data } = useQuery(QUERY_POSTS);
+  const posts = data?.posts || [];
 
   return (
     <main>
@@ -59,6 +62,14 @@ const Home = () => {
             </div>
             <div class="feed">
               <div class="post">
+              {loading ? (
+            <div>Loading...</div>
+          ) : (
+            <PostList
+              posts={posts}
+              title="Here's some bullshit. Or maybe not..."
+            />
+          )}
                 <img src="cod quiz img.jpg" alt="Just a pic for now" />
                 {/* <div><Feed /></div> */}
                 <div class="votes">
