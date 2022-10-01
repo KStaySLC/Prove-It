@@ -1,0 +1,14 @@
+[
+  {
+    "username": "SpaceLord",
+    "email": "dont@mebro.com",
+    "password": "pass010",
+    "availableVotes": 500
+  },
+  {
+    "username": "SummDude",
+    "email": "dont@meEither.com",
+    "password": "pass101",
+    "availableVotes": 499
+  }
+]

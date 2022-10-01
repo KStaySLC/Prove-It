@@ -21,11 +21,11 @@ const postSchema = new Schema({
     },
     upVotes: {
         type: Number,
-        required: true
+
     },
     downVotes: {
         type: Number,
-        required: true
+
     },
     votedUsers: [{
         type: String,

@@ -6,13 +6,25 @@ type User {
     username: String
     email: String
     password: String
+    availableVotes: Int
     posts: [Post]!
   }
   
   type Post {
     _id: ID
-    thoughtText: String
-    thoughtAuthor: String
+    postText: String
+    postAuthor: String
+    createdAt: String
+    upVotes: Int
+    downVotes: Int
+    votedUsers: String
+    comments: [Comment]!
+  }
+  
+  type Comment {
+    _id: ID
+    commentText: String
+    commentAuthor: String
     createdAt: String
   }
 
@@ -25,7 +37,7 @@ type User {
     users: [User]
     user(username: String!): User
     posts(username: String): [Post]
-    post(thoughtId: ID!): Post
+    post(postId: ID!): Post
   }
 
   type Mutation {
