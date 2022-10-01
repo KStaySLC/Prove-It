@@ -1,5 +1,8 @@
 import React from 'react'
 import '../static/login.css'
+import { useMutation } from '@apollo/client'
+import { LOGIN_USER } from "../utils/mutations";
+import { ADD_USER } from "../utils/mutations"
 const styles = {width: '60%' };
 const styles2 = { color: 'black' };
 
@@ -11,9 +14,9 @@ function Login() {
                 <form>
                     <div className="log-text">login</div>
                     <div className="sign-text">Username:</div>
-                    <input type="text" className="username" style= {{width: '60%', color: 'red'}}></input>
+                    <input type="text" className="username" style= {{width: '60%' }}></input>
                     <div className="sign-text">Password:</div>
-                    <input type="text" className="password" style = {{width: '60%', color: 'red'}}></input>
+                    <input type="text" className="password" style = {{width: '60%' }}></input>
                     <br></br>
                     <br></br>
                     <button className="sign-text" type="button" style={styles}>Sign In</button>
@@ -23,14 +26,14 @@ function Login() {
                 <form>
                     <div className="log-text">Sign up</div>
                     <div className="sign-text">Username:</div>
-                    <input type="text" className="username" style = {{width: '60%', color: 'red'}}></input>
+                    <input type="text" className="username" style = {{width: '60%' }}></input>
                     <div className="sign-text">Password:</div>
-                    <input type="text" className="password" style = {{width: '60%', color: 'red'}}></input>
+                    <input type="text" className="password" style = {{width: '60%' }}></input>
                     <div className="sign-text">Confirm Password:</div>
-                    <input type="text" className="password" style = {{width: '60%', color: 'red'}}></input>
+                    <input type="text" className="password" style = {{width: '60%' }}></input>
                     <br></br>
                     <br></br>
-                    <button className="sign-text" type="button" style= {{width: '60%', color: 'red'}}>Sign Up</button>
+                    <button className="sign-text" type="button" style= {{width: '60%' }}>Sign Up</button>
                 </form>
             </div>
         </div>

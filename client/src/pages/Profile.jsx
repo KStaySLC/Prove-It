@@ -1,28 +1,30 @@
 import React from "react";
 
 import "../static/profile.css";
+import PostForm from "../components/PostForm";
 import imgRT from "../images/imgRT.jpg";
 
-const width = { width: "25%" };
+const wide = { width: "25%" };
 
 function Profile() {
   return (
     <div>
-      <div class="profileContainer">
-        <img src={imgRT} alt="Hey Everybody!" /> 
-        <p class="postNumber">Total Posts:</p>
-        <p class="amount"> 55</p>
+      <div className="profileContainer">
+        <img src={imgRT} className="maxWide" alt="Hey Everybody!" /> 
+        <p className="postNumber">Total Posts:</p>
+        <p className="amount"> 55</p>
       </div>
       <div class="posts">
-        <button class="addPost" type="button" style={width}>
+        <button className="addPost" type="button" style={wide}>
           Add Post
         </button>
-        <button className="seePosts" type="button" style={width}>
+        <button className="seePosts" type="button" style={wide}>
           See My Posts
         </button>
       </div>
-      <div class="postHistory">
+      <div className="postHistory">
         <div className="postHistoryHeader">
+          <PostForm/>
           <h1>Post History or Maybe Feed</h1>
           <p>My Last Post</p>
           <p>My Last Post Before My Last Post</p>
