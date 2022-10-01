@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useQuery } from "@apollo/client";
 
 import PostList from "../components/PostList";
@@ -14,6 +14,19 @@ const Home = () => {
   console.log("here");
   const { loading, data } = useQuery(QUERY_POSTS);
   const posts = data?.posts || [];
+
+  let [yesCount, setYesCount] = useState(0);
+  let [noCount, setNoCount] = useState(0);
+
+  const handleYesClick = () => {
+    setYesCount((yesCount + 1));
+    console.log('Clicked yes');
+  };
+
+  const handleNoClick = () => {
+    setNoCount((noCount + 1));
+    console.log('Clicked no');
+  };
 
   return (
     <main>
@@ -70,11 +83,11 @@ const Home = () => {
                 <img src="cod quiz img.jpg" alt="Just a pic for now" />
         
                 <div class="votes">
-                  <button class="upVote" type="button" style={btnStyle}>
-                    True!
+                  <button onClick={handleYesClick} class="upVote" type="button" style={btnStyle}>
+                    True! {yesCount}
                   </button>
-                  <button class="downVote" type="button" style={btnStyle}>
-                    Bullshit!
+                  <button onClick={handleNoClick} class="downVote" type="button" style={btnStyle}>
+                    Bullshit! {noCount}
                   </button>
                 </div>
               </div>
