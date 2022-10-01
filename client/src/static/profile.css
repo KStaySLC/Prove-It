@@ -12,11 +12,11 @@ h2 {
     border-radius: 10px;
 } */
 
-/* img {
+.maxWide {
     max-width: 25%;
     height: 50vh;
     border-radius: 50%;
-} */
+}
 
 .profileContainer {
     display: flex;
