@@ -1,0 +1,13 @@
+[ 
+  {
+    "postText": "I discovered a bottle of scotch at your mom's house",
+    "postAuthor": "SpaceLord",
+    "upVotes": 7,
+    "downVotes": 2,
+    "comments": {
+        "commentText": "It was your own mom's house, bro",
+    "commentAuthor": "SummDude"
+    }
+    
+  }
+]
