@@ -1,6 +1,8 @@
 import React from "react";
+
 import "../static/profile.css";
 import imgRT from "../images/imgRT.jpg";
+
 const width = { width: "25%" };
 
 function Profile() {
