@@ -79,8 +79,7 @@ const Home = () => {
               title="Here's some bullshit. Or maybe not..."
             />
           )}
-                <img src="goodHike.jpg" alt="Just a pic for now" />
-                {/* <div><Feed /></div> */}
+                <img src="abe_lincoln.jpg" alt="Just a pic for now" />
                 <div class="votes">
                   <button onClick={handleYesClick} className="upVote" type="button" style={btnStyle}>
                     True! {yesCount}

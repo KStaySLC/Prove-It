@@ -2,10 +2,13 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 
+import PostFormPartDeux from '../components/PostForm';
+
 import { ADD_POST } from '../utils/mutations';
 
 import Auth from '../utils/auth';
 
+<PostFormPartDeux/>
 const PostForm = ({ profileId }) => {
   const [post, setPost] = useState('');
 
