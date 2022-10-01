@@ -5,12 +5,12 @@ ApolloClient,
   InMemoryCache,
   ApolloProvider,
   createHttpLink,
-  useQuery,
-  gql
+  //useQuery,
+  //gql
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { LOGIN_USER, ADD_USER, ADD_POST } from './utils/mutations';
+//import { LOGIN_USER, ADD_USER, ADD_POST } from './utils/mutations';
 import Addpost from './pages/Addpost';
 import Bank from './pages/Bank';
 import Home from './pages/Home';

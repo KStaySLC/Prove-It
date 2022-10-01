@@ -45,7 +45,7 @@ function Addpost() {
     <div className="mainDiv">
       <form className="mainForm" onSubmit={handleSubmit}>
         {submitted && valid ?<div className="success-message">You Did It! Woo!</div> : null}
-        <p>Upload Phote here</p>
+        <p>Upload Photo here</p>
         <input
           disabled={submitted}
           onChange={handlePhotoUploadInputChange}

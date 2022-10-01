@@ -17,7 +17,7 @@ h2 {
     margin-top: 100px;
 }
 
-.gmap_canvas {
+.google_map_canvas {
     width: 100%;
     padding: 5px;
     z-index: -5;
