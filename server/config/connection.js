@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/prove-it', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://Proveitstuff:password12345@Cluster0.6g2qrxw.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
