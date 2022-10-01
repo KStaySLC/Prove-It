@@ -71,22 +71,21 @@ const Home = () => {
             </div>
             <div class="feed">
               <div class="post">
-                {loading ? (
-                  <div>Loading...</div>
-                ) : (
-                  <PostList
-                    posts={posts}
-                    title="Here's some bullshit. Or maybe not..."
-                  />
-                )}
-
-                <img src="cod quiz img.jpg" alt="Just a pic for now" />
-        
+              {loading ? (
+            <div>Loading...</div>
+          ) : (
+            <PostList
+              posts={posts}
+              title="Here's some bullshit. Or maybe not..."
+            />
+          )}
+                <img src="goodHike.jpg" alt="Just a pic for now" />
+                {/* <div><Feed /></div> */}
                 <div class="votes">
-                  <button onClick={handleYesClick} class="upVote" type="button" style={btnStyle}>
+                  <button onClick={handleYesClick} className="upVote" type="button" style={btnStyle}>
                     True! {yesCount}
                   </button>
-                  <button onClick={handleNoClick} class="downVote" type="button" style={btnStyle}>
+                  <button onClick={handleNoClick} className="downVote" type="button" style={btnStyle}>
                     Bullshit! {noCount}
                   </button>
                 </div>
