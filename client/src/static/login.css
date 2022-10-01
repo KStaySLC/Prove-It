@@ -42,8 +42,7 @@ form {
 }
 
 input {
-    background-color: gray;
-    opacity: 20%;
+    background-color: rgb(214, 214, 214);
 }
 
 .sign-text {

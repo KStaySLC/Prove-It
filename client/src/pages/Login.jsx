@@ -14,7 +14,7 @@ function Login() {
                 <form>
                     <div className="log-text">login</div>
                     <div className="sign-text">Username:</div>
-                    <input type="text" className="username" style= {{width: '60%' }}></input>
+                    <input type="text" className="username" style= {{width: '60%', color: 'black' }}></input>
                     <div className="sign-text">Password:</div>
                     <input type="text" className="password" style = {{width: '60%' }}></input>
                     <br></br>
