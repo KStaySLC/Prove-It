@@ -80,10 +80,10 @@ const Home = () => {
                 <img src="goodHike.jpg" alt="Just a pic for now" />
                 {/* <div><Feed /></div> */}
                 <div class="votes">
-                  <button onClick={handleYesClick} class="upVote" type="button" style={btnStyle}>
+                  <button onClick={handleYesClick} className="upVote" type="button" style={btnStyle}>
                     True! {yesCount}
                   </button>
-                  <button onClick={handleNoClick} class="downVote" type="button" style={btnStyle}>
+                  <button onClick={handleNoClick} className="downVote" type="button" style={btnStyle}>
                     Bullshit! {noCount}
                   </button>
                 </div>

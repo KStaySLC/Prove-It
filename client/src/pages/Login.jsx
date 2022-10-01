@@ -19,7 +19,7 @@ function Login() {
                     <input type="text" className="password" style = {{width: '60%' }}></input>
                     <br></br>
                     <br></br>
-                    <button className="sign-text" type="button" style={styles}>Sign In</button>
+                    <button className="logBtn" type="button" style={styles}>Sign In</button>
                 </form>
             </div>
             <div className="sign-up">           
@@ -33,7 +33,7 @@ function Login() {
                     <input type="text" className="password" style = {{width: '60%' }}></input>
                     <br></br>
                     <br></br>
-                    <button className="sign-text" type="button" style= {{width: '60%' }}>Sign Up</button>
+                    <button className="logBtn" type="button" style= {{width: '60%' }}>Sign Up</button>
                 </form>
             </div>
         </div>

@@ -35,8 +35,8 @@ img {
     width: 1000px;
     border: 1px;
     border-color: black;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .votes{
@@ -46,11 +46,13 @@ img {
 }
 
 .upVote {
-    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 10px;
+    height: 30px;
 }
 
 .downVote {
-    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 10px;
+    height: 30px;
 }
 
 .upVote:hover {
