@@ -46,7 +46,7 @@ const PostForm = ({ profileId }) => {
 
           <div className="col-12 col-lg-3">
             <button className="btn btn-info btn-block py-3" type="submit">
-              Post Some Bullshit. Or Maybe It's Not...
+              Prost!
             </button>
           </div>
           {error && (
@@ -57,8 +57,7 @@ const PostForm = ({ profileId }) => {
         </form>
       ) : (
         <p>
-          You need to be logged in to post shit <Link to="/login">login</Link>{" "}
-          or <Link to="/signup">signup.</Link>
+          You need to be logged in to post shit <Link to="/login">Login</Link>{" "}
         </p>
       )}
     </div>
