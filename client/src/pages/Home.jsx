@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { useQuery } from "@apollo/client";
-import PostList from '../components/PostList';
-import { QUERY_POSTS } from '../utils/queries';
+
+import PostList from "../components/PostList";
+
+import { QUERY_POSTS } from "../utils/queries";
+
 import "../static/home.css";
 const btnStyle = { width: "60%" };
 
-// import PostForm from "../components/PostForm";
 // import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -28,7 +30,7 @@ const Home = () => {
 
   return (
     <main>
-      <div className="flex-row justify-center">
+      <div className="flex-row justify-center"> 
         <div className="col-12 col-md-10 mb-3 p-3">
           <div class="mapFeedContainer">
             <div class="map">

@@ -1,7 +1,16 @@
 import React from "react";
 
+// import { Navigate, useParams } from 'react-router-dom';
+// import { useQuery } from '@apollo/client';
+
+import PostList from '../components/PostList';
+import PostForm from '../components/PostForm';
+
+// import QUERY_USER from '../utils/queries';
+
+// import Auth from '../utils/auth';
+
 import "../static/profile.css";
-import PostForm from "../components/PostForm";
 import imgRT from "../images/imgRT.jpg";
 
 const wide = { width: "25%" };
