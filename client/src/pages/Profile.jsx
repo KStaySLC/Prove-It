@@ -1,9 +1,10 @@
 import React from "react";
+
 import "../static/profile.css";
 import PostForm from "../components/PostForm";
 import imgRT from "../images/imgRT.jpg";
-const wide = { width: "25%" };
 
+const wide = { width: "25%" };
 
 function Profile() {
   return (
