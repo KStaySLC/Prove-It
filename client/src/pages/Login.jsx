@@ -1,7 +1,9 @@
+
 import React from "react";
 import "../static/login.css";
 import { Link } from 'react-router-dom';
 import { useMutation } from "@apollo/client";
+
 import { LOGIN_USER } from "../utils/mutations";
 import { ADD_USER } from "../utils/mutations";
 import { useState } from "react";
@@ -43,6 +45,7 @@ const Login = (props) => {
   };
 
   return (
+
     <div>
       <div className="parent-div">
         <div className="login">
@@ -117,6 +120,7 @@ const Login = (props) => {
               Sign Up
             </button>
           </form>
+
         </div>
       </div>
     </div>

@@ -1,21 +1,9 @@
-/* header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 10vh;
-    width: auto;
-}
-
-h2 {
-    border: 3px;
-    border-color: black;
-    border-radius: 10px;
-} */
-
 .maxWide {
-    max-width: 25%;
-    height: 50vh;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    margin-top: 40px;
+    margin-right: 20px;
 }
 
 .profileContainer {
@@ -40,7 +28,7 @@ h2 {
 .posts{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 140px;
 }
 
 .addPost {
@@ -69,7 +57,7 @@ h2 {
     border-style: solid;
     border-radius: 15px;
     padding: 5px;
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 .addPost:hover {

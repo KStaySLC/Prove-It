@@ -42,8 +42,15 @@ form {
 }
 
 input {
-    background-color: gray;
-    opacity: 20%;
+    background-color: rgb(214, 214, 214);
+}
+
+.logBtn {
+    background-color:  rgb(214, 214, 214);
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 23px;
+    padding: 3px
 }
 
 .sign-text {

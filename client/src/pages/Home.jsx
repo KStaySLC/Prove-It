@@ -1,27 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { useQuery } from "@apollo/client";
 
-import PostList from '../components/PostList';
+import PostList from "../components/PostList";
 
-import { QUERY_POSTS } from '../utils/queries';
-
-
+import { QUERY_POSTS } from "../utils/queries";
 
 import "../static/home.css";
 const btnStyle = { width: "60%" };
 
-// import PostForm from "../components/PostForm";
 // import { Link } from 'react-router-dom';
-
 
 const Home = () => {
   console.log("here");
   const { loading, data } = useQuery(QUERY_POSTS);
   const posts = data?.posts || [];
 
+  let [yesCount, setYesCount] = useState(0);
+  let [noCount, setNoCount] = useState(0);
+
+  const handleYesClick = () => {
+    setYesCount((yesCount + 1));
+    console.log('Clicked yes');
+  };
+
+  const handleNoClick = () => {
+    setNoCount((noCount + 1));
+    console.log('Clicked no');
+  };
+
   return (
     <main>
-      <div className="flex-row justify-center">
+      <div className="flex-row justify-center"> 
         <div className="col-12 col-md-10 mb-3 p-3">
           <div class="mapFeedContainer">
             <div class="map">
@@ -70,14 +79,13 @@ const Home = () => {
               title="Here's some bullshit. Or maybe not..."
             />
           )}
-                <img src="cod quiz img.jpg" alt="Just a pic for now" />
-                {/* <div><Feed /></div> */}
+                <img src="abe_lincoln.jpg" alt="Just a pic for now" />
                 <div class="votes">
-                  <button class="upVote" type="button" style={btnStyle}>
-                    True!
+                  <button onClick={handleYesClick} className="upVote" type="button" style={btnStyle}>
+                    True! {yesCount}
                   </button>
-                  <button class="downVote" type="button" style={btnStyle}>
-                    Bullshit!
+                  <button onClick={handleNoClick} className="downVote" type="button" style={btnStyle}>
+                    Bullshit! {noCount}
                   </button>
                 </div>
               </div>
