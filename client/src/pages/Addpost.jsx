@@ -58,6 +58,10 @@ const PostForm = ({ profileId }) => {
         <p>
           You need to be logged in to post shit{' '}
           <Link to="/login">Login</Link>
+          <br />
+          <br />
+          Or if you need to sign up, what are you waiting for? {' '}
+          <Link to='/signup'>Sign up</Link>
         </p>
       )}
     </div>
