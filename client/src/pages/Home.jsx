@@ -1,18 +1,14 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
 
-import PostList from '../components/PostList';
+import PostList from "../components/PostList";
 
-import { QUERY_POSTS } from '../utils/queries';
-
-
+import { QUERY_POSTS } from "../utils/queries";
 
 import "../static/home.css";
 const btnStyle = { width: "60%" };
 
-// import PostForm from "../components/PostForm";
 // import { Link } from 'react-router-dom';
-
 
 const Home = () => {
   console.log("here");
@@ -21,7 +17,7 @@ const Home = () => {
 
   return (
     <main>
-      <div className="flex-row justify-center">
+      <div className="flex-row justify-center"> 
         <div className="col-12 col-md-10 mb-3 p-3">
           <div class="mapFeedContainer">
             <div class="map">
@@ -62,16 +58,17 @@ const Home = () => {
             </div>
             <div class="feed">
               <div class="post">
-              {loading ? (
-            <div>Loading...</div>
-          ) : (
-            <PostList
-              posts={posts}
-              title="Here's some bullshit. Or maybe not..."
-            />
-          )}
+                {loading ? (
+                  <div>Loading...</div>
+                ) : (
+                  <PostList
+                    posts={posts}
+                    title="Here's some bullshit. Or maybe not..."
+                  />
+                )}
+
                 <img src="cod quiz img.jpg" alt="Just a pic for now" />
-                {/* <div><Feed /></div> */}
+        
                 <div class="votes">
                   <button class="upVote" type="button" style={btnStyle}>
                     True!

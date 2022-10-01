@@ -27,7 +27,7 @@ const PostForm = ({ profileId }) => {
 
   return (
     <div>
-      <h4>Endorse some more skills below.</h4>
+      <h4>Post some shit below.</h4>
 
       {Auth.loggedIn() ? (
         <form
@@ -45,7 +45,7 @@ const PostForm = ({ profileId }) => {
 
           <div className="col-12 col-lg-3">
             <button className="btn btn-info btn-block py-3" type="submit">
-              Endorse Skill
+              Post Some Bullshit. Or Maybe It's Not...
             </button>
           </div>
           {error && (
@@ -56,7 +56,7 @@ const PostForm = ({ profileId }) => {
         </form>
       ) : (
         <p>
-          You need to be logged in to endorse skills. Please{' '}
+          You need to be logged in to post shit{' '}
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
       )}
@@ -65,13 +65,6 @@ const PostForm = ({ profileId }) => {
 };
 
 export default PostForm;
-
-
-
-
-
-
-
 
 // import React, { useState } from 'react';
 
